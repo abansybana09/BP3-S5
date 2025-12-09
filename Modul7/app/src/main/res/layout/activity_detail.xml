@@ -30,8 +30,8 @@
 
         <TextView
             android:id="@+id/tv_detail_lokasi"
-            android.layout_width="match_parent"
-            android.layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Lokasi" />
 
         <TextView
@@ -40,13 +40,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="Sejarah" />
-
-        <TextView
-            android:id="@+id/tv_detail_deskripsi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Deskripsi" />
 
     </LinearLayout>
 </ScrollView>

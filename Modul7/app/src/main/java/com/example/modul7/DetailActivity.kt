@@ -20,7 +20,6 @@ class DetailActivity : AppCompatActivity() {
         val tvDetailName: TextView = findViewById(R.id.tv_detail_name)
         val tvDetailLokasi: TextView = findViewById(R.id.tv_detail_lokasi)
         val tvDetailSejarah: TextView = findViewById(R.id.tv_detail_sejarah)
-        val tvDetailDeskripsi: TextView = findViewById(R.id.tv_detail_deskripsi)
 
         val kampus = if (Build.VERSION.SDK_INT >= 33) {
             intent.getParcelableExtra(EXTRA_KAMPUS, Kampus::class.java)
@@ -34,7 +33,6 @@ class DetailActivity : AppCompatActivity() {
             tvDetailName.text = kampus.name
             tvDetailLokasi.text = kampus.lokasi
             tvDetailSejarah.text = kampus.sejarah
-            tvDetailDeskripsi.text = kampus.deskripsi
         }
     }
 }
