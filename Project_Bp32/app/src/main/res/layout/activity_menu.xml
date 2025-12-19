@@ -213,6 +213,7 @@
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/panduan_wudhu_button"
         android:layout_width="267dp"
         android:layout_height="267dp"
         android:layout_alignParentBottom="true"

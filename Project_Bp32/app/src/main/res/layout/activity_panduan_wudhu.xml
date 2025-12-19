@@ -7,57 +7,89 @@
     android:background="@drawable/bg2"
     tools:context=".PanduanWudhuActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+    <ImageView
+        android:id="@+id/panduan_wudhu_title"
+        android:layout_width="560dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/panduanwudhu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/panduan_wudhu_title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/panduanwudhu"
-                android:layout_marginBottom="16dp"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
-            <ImageView
-                android:id="@+id/pengertian"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/pengertian"
-                android:layout_marginBottom="16dp"/>
+    <ImageView
+        android:id="@+id/pengertian"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-400dp"
+        android:layout_marginEnd="50dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/pengertian"
+        app:layout_constraintEnd_toStartOf="@id/guideline_center"
+        app:layout_constraintTop_toBottomOf="@id/panduan_wudhu_title" />
 
-            <ImageView
-                android:id="@+id/batal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/batal"
-                android:layout_marginBottom="16dp"/>
+    <ImageView
+        android:id="@+id/batal"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="-20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/batal"
+        app:layout_constraintStart_toStartOf="@id/guideline_center"
+        app:layout_constraintTop_toTopOf="@id/pengertian" />
 
-            <ImageView
-                android:id="@+id/air"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/air"
-                android:layout_marginBottom="16dp"/>
+    <ImageView
+        android:id="@+id/wajib"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/wajib"
+        app:layout_constraintEnd_toEndOf="@id/pengertian"
+        app:layout_constraintStart_toStartOf="@id/pengertian"
+        app:layout_constraintTop_toBottomOf="@id/pengertian" />
 
-            <ImageView
-                android:id="@+id/wajib"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/wajib"
-                android:layout_marginBottom="16dp"/>
+    <ImageView
+        android:id="@+id/air"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="-35dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/air"
+        app:layout_constraintStart_toStartOf="@id/batal"
+        app:layout_constraintTop_toBottomOf="@id/batal" />
 
-            <ImageView
-                android:id="@+id/amalan"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/amalan"/>
-        </LinearLayout>
-    </ScrollView>
+    <ImageView
+        android:id="@+id/amalan"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-90dp"
+        android:layout_marginEnd="-270dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/amalan"
+        app:layout_constraintEnd_toEndOf="@id/wajib"
+        app:layout_constraintStart_toStartOf="@id/wajib"
+        app:layout_constraintTop_toBottomOf="@id/wajib" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

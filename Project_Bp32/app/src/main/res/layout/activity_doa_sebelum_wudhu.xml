@@ -3,14 +3,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    tools:context=".DoaSebelumWudhuActivity">
+    android:background="@drawable/bg2"
+    tools:context=".SebelumWudhuActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Halaman Do'a Sebelum Wudhu"
-        android:textSize="24sp"
-        android:layout_centerInParent="true"/>
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/doasebelum" />
+
+    <ImageView
+        android:id="@+id/cloud"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/awan" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:layout_alignTop="@id/cloud"
+        android:layout_alignStart="@id/cloud"
+        android:layout_alignEnd="@id/cloud"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="100dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/arabic_prayer_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/arabdoasebelum" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/praying_person"
+        android:layout_width="250dp"
+        android:layout_height="430dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="-10dp"
+        android:src="@drawable/berdoa" />
 
 </RelativeLayout>

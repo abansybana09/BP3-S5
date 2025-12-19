@@ -1,16 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:background="@drawable/bg2"
     tools:context=".BelajarWudhuActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/judullangkah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Halaman Belajar Wudhu"
-        android:textSize="24sp"
-        android:layout_centerInParent="true"/>
+        android:layout_marginTop="125dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/judullangkah" />
 
-</RelativeLayout>
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judullangkah">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/langkah1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-150dp"
+                android:layout_marginBottom="-290dp"
+                app:srcCompat="@drawable/langkah1" />
+
+            <ImageView
+                android:id="@+id/langkah2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-290dp"
+                app:srcCompat="@drawable/langkah2" />
+
+            <ImageView
+                android:id="@+id/langkah3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-290dp"
+                app:srcCompat="@drawable/langkah3" />
+
+            <ImageView
+                android:id="@+id/langkah4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-290dp"
+                app:srcCompat="@drawable/langkah4" />
+
+            <ImageView
+                android:id="@+id/langkah5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-290dp"
+                app:srcCompat="@drawable/langkah5" />
+
+            <ImageView
+                android:id="@+id/langkah6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-290dp"
+                app:srcCompat="@drawable/langkah6" />
+
+            <ImageView
+                android:id="@+id/langkah7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-290dp"
+                app:srcCompat="@drawable/langkah7" />
+
+            <ImageView
+                android:id="@+id/langkah8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-290dp"
+                app:srcCompat="@drawable/langkah8" />
+
+            <ImageView
+                android:id="@+id/langkah9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-150dp"
+                app:srcCompat="@drawable/langkah9" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

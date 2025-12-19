@@ -29,6 +29,33 @@
         <activity
             android:name=".DoaSesudahActivity"
             android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BelajarWudhuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoaSebelumWudhuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PanduanWudhuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PengertianWudhuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MembatalkanWudhuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AirYangBolehDipakaiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HukumWudhuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SunnahWudhuActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

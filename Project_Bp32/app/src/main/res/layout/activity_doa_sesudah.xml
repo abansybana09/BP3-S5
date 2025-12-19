@@ -3,14 +3,82 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:background="@drawable/bg2"
     tools:context=".DoaSesudahActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/button_back"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/image_doa_sesudah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Halaman Do'a Sesudah Wudhu"
-        android:textSize="24sp"
-        android:layout_centerInParent="true"/>
+        android:src="@drawable/doasesudah"
+        android:layout_below="@id/button_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_doa_sesudah"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-50dp">
+
+        <ImageView
+            android:id="@+id/papan_nama"
+            android:layout_width="400dp"
+            android:layout_height="600dp"
+            android:layout_marginTop="170dp"
+            android:src="@drawable/papannama" />
+
+        <ScrollView
+            android:layout_width="320dp"
+            android:layout_height="230dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="180dp"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="1dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/doasesudah1"
+                    android:adjustViewBounds="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/doasesudah2"
+                    android:adjustViewBounds="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/doasesudah3"
+                    android:adjustViewBounds="true" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
 
 </RelativeLayout>

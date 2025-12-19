@@ -29,10 +29,22 @@
         android:label="@string/menu_inbox"
         tools:layout="@layout/fragment_inbox" />
 
-    <activity
+    <fragment
         android:id="@+id/nav_unread"
-        android:name="com.example.modul8_prak2.UnreadActivity"
+        android:name="com.example.modul8_prak2.UnreadFragment"
         android:label="@string/menu_unread"
-        tools:layout="@layout/activity_unread" />
+        tools:layout="@layout/fragment_unread" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.modul8_prak2.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@+id/nav_draft"
+        android:name="com.example.modul8_prak2.DraftFragment"
+        android:label="@string/menu_draft"
+        tools:layout="@layout/fragment_draft" />
 
 </navigation>
